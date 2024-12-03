@@ -1,0 +1,144 @@
+{
+  "id": "8f5eb29a-42a4-49ed-9f09-11bc29c1c277",
+  "version": "2.0",
+  "name": "P001_Commands_Selenium_Selenes",
+  "url": "https://google.sk/",
+  "tests": [{
+    "id": "990dd4d2-9b6e-4e34-a5e2-a035843efed5",
+    "name": "TC001_Open_Webpage",
+    "commands": [{
+      "id": "ef90210e-3d2d-4adb-9e0d-13666732034d",
+      "comment": "",
+      "command": "open",
+      "target": "https://google.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4a1cc23-4ec6-4259-bdaa-314e69f32a13",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.facebook.com/?locale=sk_SK",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76e709f7-a5d9-4860-8512-f80f36e7b89b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.alza.sk/",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9ccefc8f-24cf-4302-bc7d-0a0ca122e15c",
+    "name": "TC002_Wait_Element",
+    "commands": [{
+      "id": "9cdede29-9f65-4122-a289-a4da4ebaeda8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.facebook.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "584039d1-80ad-4bed-b90f-c01d8408cc04",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.fb_logo",
+      "targets": [
+        ["css=.fb_logo", "css:finder"],
+        ["xpath=//img[@alt='Facebook']", "xpath:img"],
+        ["xpath=//div[@id='content']/div/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/img", "xpath:position"]
+      ],
+      "value": "3000"
+    }, {
+      "id": "9aa50342-95d9-48ab-af74-62d84d05328c",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.slovensko.sk/sk/titulna-stranka",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "456801da-7d46-4f1a-bc5d-060b25deaebc",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=#logo > img",
+      "targets": [
+        ["css=#logo > img", "css:finder"],
+        ["xpath=//img[@alt='Ústredný portál verejných služieb ľuďom']", "xpath:img"],
+        ["xpath=//a[@id='logo']/img", "xpath:idRelative"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "2000"
+    }, {
+      "id": "f0759890-5e59-42dd-a744-d78aafeeb703",
+      "comment": "",
+      "command": "echo",
+      "target": "Test úspešný",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e61e172f-c98e-468a-bcf9-369333e3cf3e",
+    "name": "TC003_Wait_Element_Visible",
+    "commands": [{
+      "id": "5ffd347e-20c1-4bba-a5e0-2d6c933ef7ce",
+      "comment": "",
+      "command": "//Moja poznámka ZACIATOK testu",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8a75f86-dab5-434d-afeb-8dc0a1305355",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3aff892-2b3f-4bc0-ba5b-fcf6b45b9689",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=.fb_logo",
+      "targets": [],
+      "value": "3000"
+    }, {
+      "id": "e602a409-93ce-471c-a823-0d1ae282f37e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.alza.sk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0928005-7f67-4685-804b-8bbd2173957a",
+      "comment": "",
+      "command": "//waitForElementVisible",
+      "target": "css=#logo > img",
+      "targets": [],
+      "value": "2000"
+    }, {
+      "id": "8bab9801-dd8f-42ba-9632-d6b405bb8af1",
+      "comment": "",
+      "command": "echo",
+      "target": "Test úspešný",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2f0ca252-1e0c-4574-8137-73779750db62",
+      "comment": "",
+      "command": "//Moja poznámka KONIEC testu",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e4fbcb3f-6310-4f09-8655-a4b7691b3ff7",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["990dd4d2-9b6e-4e34-a5e2-a035843efed5"]
+  }],
+  "urls": ["https://google.sk/"],
+  "plugins": []
+}
